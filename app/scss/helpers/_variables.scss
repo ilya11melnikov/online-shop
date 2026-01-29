@@ -1,0 +1,29 @@
+// :root {
+// 	--color_accent: #2947A9;
+// }
+
+// colors
+
+$color_white: #fafafa;
+$color_black: #000;
+$color_grey: #F5F5F5;
+
+$color_accent: #DB4444;
+// $color_title: #292e3d;
+
+// $color_hover: #F9995D;
+
+$font_1: "Poppins", sans-serif;
+$font_2: "Inter", sans-serif;
+
+$transition_dur: 0.3s;
+
+// breakpoints
+$point_1: 1200px;
+$point_2: 1024px; /* ! */
+$point_3: 1023.98px;
+$point_4: 768px; /* ! */
+$point_5: 767.98px;
+$point_6: 480px;
+$point_7: 375px; /* ! */
+$point_8: 374.98px; /* ! */

@@ -1,0 +1,77 @@
+@use '../helpers/abstracts' as *;
+
+.switch {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    &__lang {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+        right: 1.6rem;
+
+        &-current {
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 2.1;
+            color: $color_white;
+        }
+    }
+
+    &__icon {
+        width: 1.2rem;
+        height: 1.2rem;
+        transition: transform 0.3s ease;
+
+        &--active {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        // Сдвигаем чуть ниже текста
+        top: calc(100% + 1.2rem);
+
+        // ВЫРАВНИВАНИЕ ПО ПРАВОМУ КРАЮ
+        right: 0;
+        left: auto;
+        transform: none;
+        padding: 0.8rem 0;
+        min-width: 10rem;
+
+        background-color: #000;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        z-index: 1000;
+
+        // МОСТИК
+        &::before {
+            content: "";
+            position: absolute;
+            top: -1.4rem;
+            height: 1.4rem;
+            left: 0;
+            width: 100%;
+            background: transparent;
+        }
+    }
+
+    &__item {
+        color: $color_white;
+        cursor: pointer;
+        text-align: center;
+
+        padding: 0.8rem 1.6rem;
+        font-size: 1.4rem;
+
+        &:hover {
+            background-color: #1e1e1e;
+        }
+    }
+}

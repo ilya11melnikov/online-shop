@@ -1,0 +1,47 @@
+@use './helpers/abstracts' as *;
+
+html {
+	// font-size: calc(100dvw / 1920 * 10);
+
+	font-size: 10px;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: $font_1;
+	font-weight: 400;
+	scroll-behavior: smooth;
+}
+
+.wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.section {
+	width: 100%;
+	margin: 7rem 0;
+
+	&.section--header {
+		margin: 0 0;
+	}
+}
+
+.container {
+	max-width: 148rem;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 13.5rem;
+}
+
+
+
+

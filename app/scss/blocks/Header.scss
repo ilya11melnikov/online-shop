@@ -1,0 +1,259 @@
+@use '../helpers/abstracts' as *;
+
+.header {
+    width: 100%;
+
+    // Верхняя черная панель
+    &__top {
+        background-color: #000;
+        color: $color_white;
+    }
+
+    &__top-w {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 4.8rem;
+    }
+
+    &__top-empty {
+        flex: 1;
+        display: none; // Скрываем на мобилках
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    // Белая навигация
+    &__main {
+        background-color: #fff;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+        padding-top: 4rem;
+        min-height: 9.4rem;
+    }
+
+    &__main-w {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; // Чтобы лого и меню были на одной линии
+    }
+
+    &__logo {
+        font-family: $font_2;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1.4;
+        color: $color_black;
+        text-decoration: none;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 4.8rem;
+        list-style: none;
+
+        a {
+            font-size: 1.6rem;
+            font-weight: 400;
+            text-decoration: none;
+            color: $color_black;
+            line-height: 2.4;
+            transition: border-bottom 0.1s;
+
+            &.active,
+            &:hover {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 2.4rem; // Расстояние между поиском и иконками
+    }
+
+    // Контейнер для формы и выпадающего списка
+    &__search-container {
+        position: relative;
+    }
+
+    &__search {
+        position: relative;
+        background: $color_grey;
+        border-radius: 4px;
+        padding: 0.7rem 1.2rem 0.7rem 2rem;
+        width: 24.3rem;
+        height: 3.8rem;
+        display: flex;
+        align-items: center;
+        transition: transform 0.15s ease-in-out;
+
+        input {
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 1.2rem;
+            color: $color_black;
+            line-height: 2.4;
+            width: 100%; // Используем всю ширину до кнопки
+
+            caret-color: #DB4444;
+
+            &::placeholder {
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 1.2rem;
+            }
+        }
+
+        &--active {
+            animation: search-push 0.15s ease-in-out;
+        }
+    }
+
+    // Стили кнопки внутри формы поиска
+    &__search-btn {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        transition: transform 0.1s ease;
+
+        img {
+            width: 2rem;
+            height: 2rem;
+            @extend %contain_img;
+        }
+    }
+
+    // Список истории поиска
+    // ... внутри .header
+    &__search-history {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        padding: 1.5rem 0;
+        z-index: 100;
+        list-style: none;
+
+        &-title {
+            padding: 0 2rem 1rem;
+            font-size: 1.2rem;
+            color: rgba(0, 0, 0, 0.4);
+            font-weight: 500;
+            border-bottom: 1px solid #f0f0f0;
+            margin-bottom: 0.5rem;
+        }
+
+        &-item {
+            padding: 1rem 2rem;
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: space-between; // Разносим текст и крестик
+            align-items: center;
+            cursor: pointer;
+            transition: background 0.2s;
+
+            &:hover {
+                background: #f9f9f9;
+                color: #DB4444;
+            }
+
+            span {
+                flex: 1;
+            }
+        }
+
+        &-remove {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            line-height: 1;
+            color: #ccc;
+            cursor: pointer;
+            padding: 0 0 0 1rem;
+            transition: color 0.2s;
+
+            &:hover {
+                color: #DB4444; // Крестик краснеет при наведении
+            }
+        }
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    &__icon {
+        width: 3.2rem;
+        height: 3.2rem;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+// Анимации
+@keyframes search-push {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+// Стили Sale и Switcher
+.switch {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.summerSale {
+    flex: 3;
+    font-size: 1.4rem;
+    text-align: center;
+
+    a {
+        color: inherit;
+        margin-left: 0.8rem;
+    }
+
+    span {
+        font-weight: 600;
+        text-decoration: underline;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
