@@ -8,5 +8,40 @@
     "signup": "Sign Up",
     "searchPlaceholder": "What are you looking for?",
     "recentSearches": "Recent Searches"
+  },
+
+  "Hero": {
+    "categories": {
+      "womensFashion": "Woman’s Fashion",
+      "mensFashion": "Men’s Fashion",
+      "electronics": "Electronics",
+      "homeLifestyle": "Home & Lifestyle",
+      "medicine": "Medicine",
+      "sportsOutdoor": "Sports & Outdoor",
+      "babysToys": "Baby’s & Toys",
+      "groceriesPets": "Groceries & Pets",
+      "healthBeauty": "Health & Beauty"
+    },
+
+    "slides": [
+    {
+      "id": "iphone",
+      "subTitle": "iPhone 14 Series",
+      "title": "Up to 10% off Voucher",
+      "cta": "Shop Now"
+    },
+    {
+      "id": "macbook",
+      "subTitle": "MacBook Pro M2",
+      "title": "New Level of Power",
+      "cta": "Buy Now"
+    },
+    {
+      "id": "watch",
+      "subTitle": "Apple Watch Series 8",
+      "title": "Your fitness at a new level",
+      "cta": "Go to Shop"
+    }
+  ]
   }
 }

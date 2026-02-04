@@ -1,0 +1,45 @@
+@use '../helpers/abstracts' as *;
+
+.hero {
+    &__w {
+        display: flex;
+        gap: 4.5rem; 
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    
+        border-right: 0.5px solid rgba(0, 0, 0, 0.3);
+        
+        padding: 4rem 1.6rem 0 0; 
+        
+        width: 100%;
+        max-width: 23.3rem;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color_black;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $color_accent;
+        }
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        line-height: 2.4;
+    }
+
+    .hero-slider {
+        margin-top: 4rem; 
+        flex: 1;
+    }
+}

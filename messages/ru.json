@@ -8,5 +8,42 @@
     "signup": "Регистрация",
     "searchPlaceholder": "Что вы ищете?",
     "recentSearches": "Последние поиски"
+  },
+
+  "Hero": {
+    "categories": {
+      "womensFashion": "Женская мода",
+      "mensFashion": "Мужская мода",
+      "electronics": "Электроника",
+      "homeLifestyle": "Дом и быт",
+      "medicine": "Медицина",
+      "sportsOutdoor": "Спорт и отдых",
+      "babysToys": "Детские товары и игрушки",
+      "groceriesPets": "Продукты и животные",
+      "healthBeauty": "Здоровье и красота"
+    },
+
+    "slides": [
+    {
+      "id": "iphone",
+      "subTitle": "iPhone 14 Series",
+      "title": "Скидка до 10% по ваучеру",
+      "cta": "Купить сейчас"
+    },
+    {
+      "id": "macbook",
+      "subTitle": "MacBook Pro M2",
+      "title": "Новый уровень мощности",
+      "cta": "Подробнее"
+    },
+    {
+      "id": "watch",
+      "subTitle": "Apple Watch Series 8",
+      "title": "Твой фитнес на новом уровне",
+      "cta": "В магазин"
+    }
+  ]
   }
+
+  
 }
