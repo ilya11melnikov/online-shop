@@ -1,0 +1,214 @@
+@use '../helpers/abstracts' as *;
+
+.flash-sales {
+    padding-top: 14rem;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 6rem;
+
+    &__header-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 4rem;
+    }
+
+    &__header-left {
+        display: flex;
+        align-items: flex-end;
+        gap: 8.7rem;
+    }
+
+    &__title-block {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        color: $color_accent; 
+        font-weight: 600;
+        font-size: 1.6rem;
+
+        &::before {
+            content: "";
+            width: 2rem;
+            height: 4rem;
+            background-color: $color_accent;
+            border-radius: 4px;
+        }
+    }
+
+    &__title {
+        font-family: $font_2;
+        font-size: 3.6rem;
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: 0.04em;
+    }
+
+    &__timer {
+        display: flex;
+        align-items: center;
+        gap: 1.7rem;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-label {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+        }
+
+        &-num {
+            font-family: $font_2;
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        &-sep {
+            color: #E07575;
+            font-size: 2.8rem;
+            padding-top: 1.5rem;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        gap: 0.8rem;
+
+        &-btn {
+            width: 4.6rem;
+            height: 4.6rem;
+            border-radius: 50%;
+            background: #F5F5F5;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer; // Исправлено: добавлен курсор
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: #DB4444; 
+                svg path { stroke: white; }
+            }
+
+            &.swiper-button-disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    &__slider {
+        margin-bottom: 6rem;
+    }
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__view-all {
+        background-color: $color_accent;
+        color: $color_white;
+        padding: 1.6rem 4.8rem;
+        border-radius: 4px;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer; // Исправлено: добавлен курсор
+        transition: background 0.3s;
+        display: inline-block;
+
+        &:hover {
+            background-color: #E07575;
+        }
+    }
+}
+
+// Карточка товара
+.product-card {
+    min-width: 27rem;
+    position: relative;
+
+    &__image-box {
+        position: relative;
+        width: 100%;
+        height: 25rem;
+        background-color: #F5F5F5; // Твой $color_grey
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        &:hover .product-card__add-btn {
+            transform: translateY(0);
+        }
+    }
+
+    &__img {
+        width: 17rem;
+        height: 15rem;
+        object-fit: contain; // Если %contain_img не срабатывает
+    }
+
+    &__discount {
+        position: absolute;
+        top: 1.2rem;
+        left: 1.2rem;
+        background-color: $color_accent;
+        color: $color_white;
+        padding: 0.4rem 1.2rem;
+        border-radius: 4px;
+        font-size: 1.2rem;
+    }
+
+    &__actions {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    &__action-btn {
+        width: 3.4rem;
+        height: 3.4rem;
+        background: $color_white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer; // Исправлено: добавлен курсор
+        border: none;
+        transition: background 0.2s;
+
+        &:hover {
+            background: #f0f0f0;
+        }
+    }
+
+    &__add-btn {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: $color_black;
+        color: $color_white;
+        border: none;
+        padding: 1.2rem;
+        cursor: pointer; // Исправлено: добавлен курсор
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+        font-weight: 500;
+    }
+}

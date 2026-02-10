@@ -1,0 +1,18 @@
+export const ALL_PRODUCTS = [
+    { id: '1', nameKey: 'gamepad_havit', price: 25.99, image: '/products/gamepad.jpg' },
+    { id: '2', nameKey: 'keyboard_ak900', price: 45.50, image: '/products/keyboard.jpg' },
+    { id: '3', nameKey: 'monitor_gaming', price: 299.99, image: '/products/monitor.jpg' },
+    { id: '4', nameKey: 'chair_comfort', price: 180.00, image: '/products/chair.jpg' },
+    { id: '5', nameKey: 'laptop_asus', price: 850.00, image: '/products/asus_laptop.jpg' },
+    { id: '6', nameKey: 'gamepad_shooter', price: 35.00, image: '/products/black_gamepad.jpg' },
+    { id: '7', nameKey: 'soccer_cleats', price: 75.90, image: '/products/boots.jpg' },
+    { id: '8', nameKey: 'camera_dslr', price: 540.00, image: '/products/camera.jpg' },
+    { id: '9', nameKey: 'dog_food', price: 15.99, image: '/products/cesar.jpg' },
+    { id: '10', nameKey: 'skincare_set', price: 65.00, image: '/products/creams.jpg' },
+    { id: '11', nameKey: 'quilted_jacket', price: 120.00, image: '/products/green_jacket.jpg' },
+    { id: '12', nameKey: 'duffle_bag', price: 950.00, image: '/products/gucci_bag.jpg' },
+    { id: '13', nameKey: 'kids_car', price: 210.00, image: '/products/mersedes_mini.jpg' },
+    { id: '14', nameKey: 'winter_coat', price: 145.00, image: '/products/pink_jacket.jpg' },
+    { id: '15', nameKey: 'bookshelf', price: 55.00, image: '/products/shelf.jpg' },
+    { id: '16', nameKey: 'cpu_cooler', price: 85.50, image: '/products/speaker.jpg' },
+];

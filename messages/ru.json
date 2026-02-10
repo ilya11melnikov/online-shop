@@ -24,26 +24,55 @@
     },
 
     "slides": [
-    {
-      "id": "iphone",
-      "subTitle": "iPhone 14 Series",
-      "title": "Скидка до 10% по ваучеру",
-      "cta": "Купить сейчас"
-    },
-    {
-      "id": "macbook",
-      "subTitle": "MacBook Pro M2",
-      "title": "Новый уровень мощности",
-      "cta": "Подробнее"
-    },
-    {
-      "id": "watch",
-      "subTitle": "Apple Watch Series 8",
-      "title": "Твой фитнес на новом уровне",
-      "cta": "В магазин"
-    }
-  ]
-  }
+      {
+        "id": "iphone",
+        "subTitle": "iPhone 14 Series",
+        "title": "Скидка до 10% по ваучеру",
+        "cta": "Купить сейчас"
+      },
+      {
+        "id": "macbook",
+        "subTitle": "MacBook Pro M2",
+        "title": "Новый уровень мощности",
+        "cta": "Подробнее"
+      },
+      {
+        "id": "watch",
+        "subTitle": "Apple Watch Series 8",
+        "title": "Твой фитнес на новом уровне",
+        "cta": "В магазин"
+      }
+    ]
+  },
 
-  
+  "FlashSales": {
+    "label": "Сегодня",
+    "title": "Молниеносные распродажи",
+    "viewAll": "Посмотреть все товары",
+    "timer": {
+      "days": "Дни",
+      "hours": "Часы",
+      "minutes": "Минуты",
+      "seconds": "Секунды"
+    }
+  },
+
+  "Products": {
+    "gamepad_havit": "Геймпад HAVIT HV-G92",
+    "keyboard_ak900": "Проводная клавиатура AK-900",
+    "monitor_gaming": "Игровой IPS LCD монитор",
+    "chair_comfort": "Комфортное кресло S-Series",
+    "laptop_asus": "Игровой ноутбук ASUS FHD",
+    "gamepad_shooter": "USB Геймпад GP11 Shooter",
+    "soccer_cleats": "Футбольные бутсы Jr. Zoom",
+    "camera_dslr": "Зеркальный фотоаппарат CANON EOS",
+    "dog_food": "Сухой корм для собак",
+    "skincare_set": "Набор для ухода Curology",
+    "quilted_jacket": "Стеганая атласная куртка",
+    "duffle_bag": "Дорожная сумка (Luxury)",
+    "kids_car": "Детский электромобиль",
+    "winter_coat": "Зимнее пальто The North",
+    "bookshelf": "Небольшой книжный шкаф",
+    "cpu_cooler": "Система жидкостного охлаждения"
+  }
 }

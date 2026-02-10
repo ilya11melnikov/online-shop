@@ -24,24 +24,55 @@
     },
 
     "slides": [
-    {
-      "id": "iphone",
-      "subTitle": "iPhone 14 Series",
-      "title": "Up to 10% off Voucher",
-      "cta": "Shop Now"
-    },
-    {
-      "id": "macbook",
-      "subTitle": "MacBook Pro M2",
-      "title": "New Level of Power",
-      "cta": "Buy Now"
-    },
-    {
-      "id": "watch",
-      "subTitle": "Apple Watch Series 8",
-      "title": "Your fitness at a new level",
-      "cta": "Go to Shop"
+      {
+        "id": "iphone",
+        "subTitle": "iPhone 14 Series",
+        "title": "Up to 10% off Voucher",
+        "cta": "Shop Now"
+      },
+      {
+        "id": "macbook",
+        "subTitle": "MacBook Pro M2",
+        "title": "New Level of Power",
+        "cta": "Buy Now"
+      },
+      {
+        "id": "watch",
+        "subTitle": "Apple Watch Series 8",
+        "title": "Your fitness at a new level",
+        "cta": "Go to Shop"
+      }
+    ]
+  },
+
+  "FlashSales": {
+    "label": "Today's",
+    "title": "Flash Sales",
+    "viewAll": "View All Products",
+    "timer": {
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
     }
-  ]
+  },
+
+  "Products": {
+    "gamepad_havit": "HAVIT HV-G92 Gamepad",
+    "keyboard_ak900": "AK-900 Wired Keyboard",
+    "monitor_gaming": "IPS LCD Gaming Monitor",
+    "chair_comfort": "S-Series Comfort Chair",
+    "laptop_asus": "ASUS FHD Gaming Laptop",
+    "gamepad_shooter": "GP11 Shooter USB Gamepad",
+    "soccer_cleats": "Jr. Zoom Soccer Cleats",
+    "camera_dslr": "CANON EOS DSLR Camera",
+    "dog_food": "Breed Dry Dog Food",
+    "skincare_set": "Curology Skincare Set",
+    "quilted_jacket": "Quilted Satin Jacket",
+    "duffle_bag": "Luxury Duffle Bag",
+    "kids_car": "Kids Electric Car",
+    "winter_coat": "The North Winter Coat",
+    "bookshelf": "Small Wooden Bookshelf",
+    "cpu_cooler": "RGB Liquid CPU Cooler"
   }
 }

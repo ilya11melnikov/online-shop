@@ -1,0 +1,63 @@
+@use '../helpers/abstracts' as *;
+
+.product-card {
+    &__info {
+        padding-top: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $color_black;
+    }
+
+    &__price-row {
+        display: flex;
+        gap: 1.2rem;
+        align-items: center;
+    }
+
+    &__price-new {
+        color: $color_accent;
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+
+    &__price-old {
+        color: rgba(0, 0, 0, 0.5);
+        text-decoration: line-through;
+        font-size: 1.6rem;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    &__reviews {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__rating-row {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        
+        .rating-stars {
+          display: flex;
+        }
+        
+        .reviews-count {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 0.5);
+          margin-top: 0.3rem; // Микро-коррекция по вертикали
+        }
+      }
+}

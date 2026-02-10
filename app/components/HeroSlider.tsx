@@ -4,9 +4,9 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 
 const slideImages: Record<string, string> = {
-  iphone: "/banner-iphone.jpg",
-  macbook: "/banner-macbook.jpg",
-  watch: "/banner-watch.jpg"
+  iphone: "/banners/banner-iphone.jpg",
+  macbook: "/banners/banner-macbook.jpg",
+  watch: "/banners/banner-watch.jpg"
 };
 
 export default function HeroSlider() {
